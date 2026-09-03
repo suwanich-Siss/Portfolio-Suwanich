@@ -1,0 +1,213 @@
+/* ─────────────────────────────────────────
+   Projects — Featured + Other
+   ───────────────────────────────────────── */
+
+/* ── Featured Project Card ─────────────── */
+.featured-project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 40px;
+  margin-top: 8px;
+  margin-bottom: 72px;
+}
+
+/* Section badge */
+.featured-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+/* Project title */
+.featured-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+/* Short description */
+.featured-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+/* ── Tech Stack Pills ───────────────────── */
+.tech-stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.tech-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* ── Architecture Box ───────────────────── */
+/*
+  Designed to look like an engineering spec / system diagram.
+  Thin border, monospace internals, clean arrow connectors.
+*/
+.architecture-box {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+}
+
+.arch-label {
+  font-family: var(--font-mono);
+  font-size: 0.675rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.arch-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Individual system nodes */
+.arch-node {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: border-color 150ms ease;
+}
+
+.arch-node:hover {
+  border-color: var(--border-highlight);
+}
+
+/* Arrow connector */
+.arch-arrow {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+/* ── Two-column content grid ────────────── */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Key Features list ──────────────────── */
+.sub-title {
+  font-family: var(--font-mono);
+  font-size: 0.675rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.check {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Challenge & Solution — Post-mortem style ── */
+/*
+  This block deliberately looks like a code-review / post-mortem entry:
+  no yellow warnings, no emoji noise — just clean structured prose.
+*/
+.challenge-card {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.challenge-title {
+  font-family: var(--font-mono);
+  font-size: 0.675rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.challenge-detail {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.challenge-detail strong {
+  display: block;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+/* ── Other Projects Section ─────────────── */
+.other-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}

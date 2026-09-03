@@ -1,0 +1,60 @@
+/* ─────────────────────────────────────────
+   Contact / Footer
+   ───────────────────────────────────────── */
+.contact-section {
+  border-top: 1px solid var(--border-color);
+  padding: 80px 24px 56px;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Large CTA headline */
+.contact-headline {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+}
+
+/* Link group */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+/* Ghost buttons — same as btn-secondary in Hero */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 9px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+.contact-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+  background: var(--bg-card);
+}
+
+/* Copyright line */
+.contact-footer {
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,62 @@
+/* ─────────────────────────────────────────
+   Navbar
+   ───────────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* Opaque by default — no blurry glass look */
+  background: var(--bg-main);
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease;
+}
+
+/* Add a subtle separator once the user scrolls */
+.navbar.scrolled {
+  border-bottom-color: var(--border-color);
+}
+
+.navbar-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Wordmark / Logo */
+.navbar-logo {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  transition: color 150ms ease;
+}
+
+.navbar-logo:hover {
+  color: var(--accent);
+}
+
+/* Nav Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.navbar-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 150ms ease;
+}
+
+.navbar-links a:hover {
+  color: var(--text-primary);
+}

@@ -1,0 +1,57 @@
+/* ─────────────────────────────────────────
+   Skills
+   ───────────────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px; /* hairline gap trick — gives a grid-line effect */
+  background: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.skill-category {
+  background: var(--bg-card);
+  padding: 24px;
+  transition: background-color 150ms ease;
+}
+
+.skill-category:hover {
+  background: var(--bg-card-hover);
+}
+
+/* Category heading */
+.skill-category-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Each skill tag — monospace, minimal */
+.skill-item {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.skill-item:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+}

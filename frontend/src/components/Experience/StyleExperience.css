@@ -1,0 +1,78 @@
+/* ─────────────────────────────────────────
+   Experience
+   ───────────────────────────────────────── */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+/* Each entry shares a left-rule running through the whole list */
+.experience-item {
+  position: relative;
+  padding: 28px 0 28px 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+/* Timeline vertical line */
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border-color);
+}
+
+/* Timeline dot */
+.experience-item::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 32px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 1px solid var(--bg-main);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.exp-role {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.exp-period {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.exp-org {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.exp-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}

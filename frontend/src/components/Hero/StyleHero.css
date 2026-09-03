@@ -1,0 +1,122 @@
+/* ─────────────────────────────────────────
+   Hero
+   ───────────────────────────────────────── */
+.hero-section {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  padding-top: 56px; /* offset fixed navbar */
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+/* Status badge — subtle, no glow */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--success);
+  letter-spacing: 0.01em;
+  margin-bottom: 28px;
+}
+
+/* Green pulse dot */
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--success);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Headline */
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.18;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+/* Body copy */
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+
+/* Inline tech-stack line */
+.tech-stack-tags {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.tech-stack-tags span {
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* CTA row */
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Primary button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: var(--radius-sm);
+  transition: opacity 150ms ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+/* Secondary / ghost button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 9px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+.btn-secondary:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+  background: var(--bg-card);
+}

@@ -1,0 +1,26 @@
+/* ─────────────────────────────────────────
+   About
+   ───────────────────────────────────────── */
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+}
+
+.about-text {
+  font-size: 0.9375rem; /* 15px */
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline keyword callout — uses accent color only for tech terms */
+.about-highlight {
+  color: var(--text-primary);
+  font-weight: 500;
+}
