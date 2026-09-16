@@ -1,4 +1,5 @@
 import React from 'react';
+import GatewayFlow from "../components/Background/GatewayFlow/GatewayFlow";
 import Navbar from '../components/Navbar/Nabar';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
@@ -9,16 +10,17 @@ import Contact from '../components/Contact/Contact';
 
 const Home = () => {
     return (
-        <div>
-            <Navbar />
-            <main>
+        <div className="home">
+            <GatewayFlow />
+            <div className="content">
+                <Navbar />
                 <Hero />
                 <About />
                 <Projects />
                 <Skills />
                 <Experience />
-            </main>
-            <Contact />
+                <Contact />
+            </div>
         </div>
     );
 };

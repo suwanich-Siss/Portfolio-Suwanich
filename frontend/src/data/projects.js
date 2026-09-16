@@ -16,7 +16,26 @@ export const featuredProject = {
         investigation: "ตัวแอปพลิเคชันเรียกใช้งานผ่าน Private IP [http://xxx.xxx.x.xx] ซึ่งไม่สามารถเข้าถึงได้จากเครือข่ายสาธารณะ ประกอบกับระบบปฏิบัติการ Android บล็อกการรับส่งข้อมูลแบบ HTTP",
         cause: "เครื่องเซิร์ฟเวอร์เดิม (XAMPP) ขาดช่องทาง Public Endpoint บนอินเทอร์เน็ต และติดนโยบายความปลอดภัยด้านการสื่อสารที่ไม่เข้ารหัสของ Android",
         solution: "เชื่อมต่อเซิร์ฟเวอร์ออกสู่เครือข่ายสาธารณะอย่างปลอดภัยด้วย Ngrok Tunnel (HTTPS) ผ่าน URL",
-    }
+    },
+    image: [
+        "/images/projects/income-expense/Startapp.jpg",
+        "/images/projects/income-expense/Singup.jpg",
+        "/images/projects/income-expense/Login.jpg",
+        "/images/projects/income-expense/Homedata.jpg",
+        "/images/projects/income-expense/History.jpg",
+        "/images/projects/income-expense/Analysis.jpg",
+        "/images/projects/income-expense/Profile.jpg",
+        "/images/projects/income-expense/EditProfile.jpg",
+        "/images/projects/income-expense/Editpassword.jpg",
+        "/images/projects/income-expense/Export.jpg",
+        "/images/projects/income-expense/Home.jpg",
+        "/images/projects/income-expense/Expess.jpg",
+        "/images/projects/income-expense/Maslow.jpg",
+        "/images/projects/income-expense/Income.jpg",
+        "/images/projects/income-expense/IncomeG.jpg",
+        "/images/projects/income-expense/OCR.jpg",
+        "/images/projects/income-expense/OCRcard.jpg",
+    ]
 };
 
 export const otherProjects = [
@@ -36,10 +55,10 @@ export const otherProjects = [
 
     },
         {
-        id: "hackathon-iot",
-        title: "Hackathon / IoT",
-        description: "",
-        tech: ["React Native", "Backend", "Notification"]
+        id: "Expense-Dashboard",
+        title: "Expense Dashboard",
+        description: "แดชบอร์ดสำหรับแสดงผลการจัดการรายรับและรายจ่าย พร้อมฟีเจอร์วิเคราะห์ข้อมูลและรายงาน",
+        tech: ["React", "Vite", "Node.js", "Express", "MySQL", "REST API"]
 
     }
 ]
