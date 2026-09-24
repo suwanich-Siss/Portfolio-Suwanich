@@ -44,8 +44,6 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  position: sticky;
-  top: 24px; /* ติดขอบบนขณะ scroll */
 }
 
 /* ── Badge ──────────────────────────────── */

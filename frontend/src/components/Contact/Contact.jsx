@@ -6,7 +6,7 @@ const Contact = () => {
         <footer id="contact" className="contact-section">
             <h2 className="contact-headline">Let's Work Together</h2>
             <p className="contact-sub">
-                กำลังมองหาโอกาสฝึกงานหรือร่วมงาน — ติดต่อมาได้เลย
+                สนใจโอกาสที่จะได้เข้าร่วมเป็นส่วนนึงในทีมสำหรับการพัฒนาโปรเจก — ติดต่อมาได้เลย
             </p>
             <div className="contact-links">
                 <a
